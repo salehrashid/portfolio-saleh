@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  portfolio_saleh:
+    build:
+      context: ./docker
+      dockerfile: portfolio_saleh/Dockerfile
+    ports:
+      - ${DOCKER_WEB_PORTFOLIO_HOST_PORT}:5050
+    env_file:
+      - .env
+    volumes:
+      - .:/go/src/github.com/salehrashid/portfolio-saleh
