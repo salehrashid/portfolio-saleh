@@ -1,10 +1,10 @@
 version: '3.8'
 
 services:
-  portfolio_saleh:
+  web_portfolio:
     build:
       context: ./docker
-      dockerfile: portfolio_saleh/Dockerfile
+      dockerfile: web_portfolio/Dockerfile
     ports:
       - ${DOCKER_WEB_PORTFOLIO_HOST_PORT}:5050
     env_file:
