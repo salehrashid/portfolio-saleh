@@ -13,9 +13,8 @@ type Renderer struct {
 	Location string
 }
 
-type Name struct {
-	Name string
-	Age  int
+type DynamicTitle struct {
+	Title string
 }
 
 func NewTemplateRenderer(debug bool) *Renderer {

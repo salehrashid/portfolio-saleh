@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 {{template "html-head"}}
-
 <body>
+<!-- ======= Header ======= -->
+{{template "header"}}
+<!-- ======= End Header ======= -->
 
-  <!-- ======= Header ======= -->
-  {{template "header"}}
-  <!-- ======= End Header ======= -->
-
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(/assets/img/hero-bg.jpg)">
+<!-- ======= Hero Section ======= -->
+<div id="hero" class="hero route bg-image" style="background-image: url(/assets/images/hero-bg.jpg)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <p class="display-6 color-d">
-            Hello, Coder
-            <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25" alt="">
-          </p>
-          <h1 class="hero-title mb-4">I am Saleh Rashid Babsel</h1>
-          <p class="hero-subtitle">
-            <span class="typed" data-typed-items="Web Developer, Software Engineer, Mobile Developer"></span>
-          </p>
-          <p class="pt-3">
-            <a class="btn btn-primary btn js-scroll px-4" href="/assets/saleh-cv.zip" role="button" download>Download CV</a>
-          </p>
+        <div class="table-cell">
+            <div class="container">
+                <p class="display-6 color-d">
+                    Hello, Coder
+                    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25" alt="">
+                </p>
+                <h1 class="hero-title mb-4">I am Saleh Rashid Babsel</h1>
+                <p class="hero-subtitle">
+                    <span class="typed" data-typed-items="Web Developer, Software Engineer"></span>
+                </p>
+                <p class="pt-3">
+                    <a class="btn btn-primary btn js-scroll px-4" href="/assets/saleh-cv.zip" role="button" download>Download CV</a>
+                </p>
+            </div>
         </div>
-      </div>
     </div>
-  </div><!-- End Hero Section -->
+</div>
+<!-- ======= End Hero Section ======= -->
 
-  <main id="main">
+<main id="main">
     <!-- ======= About Section ======= -->
     {{template "section-about"}}
     <!-- ======= End About Section ======= -->
 
     <!-- ======= Services Section ======= -->
-    {{template "section-service"}}
+    <!--    {{template "section-service"}}-->
     <!-- ======= End Services Section ======= -->
 
     <!-- ======= Counter Section ======= -->
-    {{template "section-counter"}}
+    <!--    {{template "section-counter"}}-->
     <!-- ======= End Counter Section ======= -->
 
     <!-- ======= Certificate Section ======= -->
@@ -52,18 +50,15 @@
     {{template "section-contact"}}
     <!-- ======= End Contact Section ======= -->
 
-  </main><!-- End #main -->
+</main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  {{template "footer"}}
-  <!-- ======= End Footer ======= -->
+<!-- ======= Footer ======= -->
+{{template "footer"}}
+<!-- ======= End Footer ======= -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-    <i class='bx bx-up-arrow-alt'></i>
-  </a>
+{{template "preloader"}}
 
-  <!-- Vendor JS Files -->
-  {{template "section-script"}}
+<!-- Vendor JS Files -->
+{{template "section-script"}}
 </body>
 </html>

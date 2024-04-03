@@ -11,3 +11,14 @@ services:
       - .env
     volumes:
       - .:/go/src/github.com/salehrashid/portfolio-saleh
+  jenkins:
+    image: jenkins/jenkins:lts
+    privileged: true
+    user: root
+    ports:
+      - ${JENKINS_WEB_PORTFOLIO_HOST_PORT}:8080
+      - 50000:50000
+    container_name: jenkins
+    volumes:
+      - /var/jenkins_compose/jenkins_configuration:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock

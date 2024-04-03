@@ -19,7 +19,7 @@ func GetPort(path string) string {
 	if res > 0 {
 		return fmt.Sprintf(":%d", res)
 	}
-	return fmt.Sprintf(":%d")
+	return ""
 }
 
 func GetInt(path string) int {
